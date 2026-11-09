@@ -1,0 +1,21 @@
+# Claude
+CLAUDE.md
+.claude/
+graphify-out/
+
+# Material privado o de terceros
+_inbox/
+_archivo/
+materials/
+bibliography/
+syllabus.md
+
+# Generados e IDE
+build/
+.gradle/
+.kotlin/
+.idea/
+*.iml
+
+# Secretos
+.env
