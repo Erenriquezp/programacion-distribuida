@@ -24,7 +24,7 @@ public class TestConfigRest {
 
     @GET
     public String test() {
-    // Reaizar busqueda sobre las fuentes de configuracion
+        // Reaizar busqueda sobre las fuentes de configuracion
         Config config = ConfigProvider.getConfig();
 
         // Listar las fuetnes de configuracion

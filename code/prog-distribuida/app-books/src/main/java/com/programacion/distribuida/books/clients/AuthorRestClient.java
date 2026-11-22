@@ -8,7 +8,8 @@ import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 import java.util.List;
 
-@RegisterRestClient(configKey = "authors")
+//@RegisterRestClient(baseUri = "http://localhost:8070")
+@RegisterRestClient(configKey = "AuthorRestClient")
 @Path("/authors")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
@@ -28,8 +29,8 @@ public interface AuthorRestClient {
 //                .build();
 //    }
 
+    // Interface proxy to AuthorRest.findByBook
     @GET
     @Path("/find/{isbn}")
     List<AuthorDto> findByBook(@PathParam("isbn") String isbn);
 }
-

@@ -33,6 +33,12 @@ dependencies {
     implementation("io.quarkus:quarkus-hibernate-orm-panache")
     implementation("io.quarkus:quarkus-jdbc-postgresql")
 
+    // flyway, liquibase: herramientas para control de cambios en la base de datos
+    implementation("io.quarkus:quarkus-flyway")
+    // Source: https://mvnrepository.com/artifact/org.flywaydb/flyway-database-postgresql
+    runtimeOnly("org.flywaydb:flyway-database-postgresql:13.12.2")
+
+
 }
 
 tasks.withType<JavaCompile> {
