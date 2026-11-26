@@ -37,6 +37,12 @@ dependencies {
     implementation("io.quarkus:quarkus-rest-client-jsonb")
     implementation("io.quarkus:quarkus-rest-client")
 
+    // Service Discovery: registro en Consul (Vert.x) y descubrimiento con Stork
+    implementation("io.smallrye.reactive:smallrye-mutiny-vertx-consul-client")
+    implementation("io.quarkus:quarkus-smallrye-stork")
+    implementation("io.smallrye.stork:stork-service-discovery-consul")
+    implementation("io.quarkus:quarkus-jackson")
+
 }
 
 tasks.withType<JavaCompile> {

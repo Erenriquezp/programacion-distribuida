@@ -38,6 +38,9 @@ dependencies {
     // Source: https://mvnrepository.com/artifact/org.flywaydb/flyway-database-postgresql
     runtimeOnly("org.flywaydb:flyway-database-postgresql:13.12.2")
 
+    // Service Discovery
+    // Source: https://mvnrepository.com/artifact/io.smallrye.reactive/smallrye-mutiny-vertx-consul-client
+    implementation("io.smallrye.reactive:smallrye-mutiny-vertx-consul-client")
 
 }
 
